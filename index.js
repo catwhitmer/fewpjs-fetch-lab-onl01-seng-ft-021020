@@ -1,10 +1,4 @@
-function fetchBooks() {
-  fetch('https://anapioficeandfire.com/api/books')
-    .then(resp => resp.json())
-    .then(renderBooks(resp.json) => console.log(resp.json));
-}
 
-}
 function renderBooks(json) {
   const main = document.querySelector('main')
   json.forEach(book => {
